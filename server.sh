@@ -58,7 +58,7 @@ fi
 
 echo -e "\e[96mCreating dropbear banner\e[0m"
 cat >> "$FILE2" <<EOL
-<h4>&#9734; <font color="#20B2AA">PRIVATE SERVER</font> &#9734;</h4>
+<h4>&#9734; <font color="#20B2AA">SSH Server</font> &#9734;</h4>
 <font color="#8A2BE2">&#187; NO SPAM !!!</font><br>
 <font color="#A52A2A">&#187; NO DDOS !!!</font><br>
 <font color="#6495ED">&#187; NO HACKING !!!</font><br>
@@ -66,7 +66,8 @@ cat >> "$FILE2" <<EOL
 <font color="#9932CC">&#187; NO TORRENT !!!</font><br>
 <font color="#1E90FF">&#187; NO OVER DOWNLOADING !!!</font><br>
 <br>
-<b><font color="#FF6347">mAX web&trade;</font> Auto Script 2.0</b>
+<b><font color="#FF6347">Server By: </font>Lalantha Madhushan</b>
+<b><font color="#FF6347">LalanthaM&trade;</font> Auto Script</b>
 <br>
 EOL
 
@@ -205,7 +206,7 @@ myip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 echo " "
 echo -e "\e[96mInstallation has been completed!!\e[0m"
 echo " "
-echo "--------------------------- Server Information -------------------------"
+echo "----------------------------------------------------"
 echo " "
 echo "Server Information"
 echo "   - IP address 	: ${myip}"
@@ -214,6 +215,8 @@ echo "   - Dropbear 	: 80"
 echo "   - Stunnel 		: 443"
 echo "   - Badvpn 		: 7300"
 echo "   - Squid 		: 8080/3128"
+echo " "
+echo "----------------------------------------------------"
 echo " "
 echo -e "\e[95mCreate users and reboot your vps before use.\e[0m"
 echo " "
