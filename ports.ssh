@@ -1,0 +1,12 @@
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 80 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 443 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 444 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 143 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 45 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 76 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 191 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 73 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 8000 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 8080 -j ACCEPT
+sudo iptables -I INPUT 6 -m state --state NEW -p tcp --dport 7200 -j ACCEPT
+sudo netfilter-persistent save
